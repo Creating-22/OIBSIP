@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>document</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            
+            const wrapper=document.getElementById('wrapper');
+        const qrInput=document.getElementById('input');
+        const button=document.getElementById('button');
+        const qrImg=document.getElementById('image');
+       
+       function generate(){
+            
+            
+            if(qrValue=="") return;
+            button.innerHTML="Generating QR Code....";
+
+
+            qrImg.src=`https://api.qrserver.com/v1/crea
+            te-qr-code/?size=150x150&data=${qrValue}`;
+          qrImg.addEventListener("load",()=>{
+            buton.innerHTML="Generate QR Code";
+          })
+        
+        
+        }
+        </script>
+    </head>
+    <body>
+<div id="wrapper">
+    <h1 >QR Code Generator</h1>
+    <p>Please Enter the input:</p>
+    <div id="form">
+        <input id="input" type="text" placeholder="Enter here">
+        <button id="button" onclick="generate()">Generate QR Code</button>
+    </div>
+    <div id="qr">
+        <img  id="image"src="D:\Document\Web\html\QR Generator\qr.jpeg" alt="qrcode">
+    </div>
+</div>
+
+
+    </body>
+</html>

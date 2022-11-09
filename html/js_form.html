@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Form</title>
+    <script>
+        function fun(){
+            document.getElementById("img2").src="img.png";
+        }
+        function funout(){
+            document.getElementById("img2").src="img2.jpg";
+        }
+        function newfunc(x){
+x.style.background="blue";
+        }
+        function fun2()
+        {var d=new Date();
+            var t=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+            document.myform.time.value=t;
+            setInterval("fun2()",1000)}
+            
+    </script>
+</head>
+<body onload="fun2()">
+    <form name="myform">
+        <center><input name="time" style="color:blueviolet; font-size: 100px"></center>
+    </form>
+    <form name="myform1">
+        
+        <label for="rollno">Roll Number:</label>
+        <input type="text" id="rollno" onfocus="newfunc(this)"><br>
+        <label for="passyear">Passing Year:</label>
+        <input type="text" id="passyear"><br>
+        <label for="pwd">Password:  </label>
+        <input type="password" id="pwd"><br>
+        <input type="submit" >
+        <input type="reset">
+<img src="img2.jpg" id="img2" onmouseover="fun()" onmouseout="funout()">
+
+</body>
+</html>

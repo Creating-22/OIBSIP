@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> color changer </title>
+
+  <script>
+    function color() {
+      var x = Math.floor(Math.random() * 255);
+      var y = Math.floor(Math.random() * 255);
+      var z = Math.floor(Math.random() * 255);
+
+      document.body.style.backgroundColor = "rgb(" + x + "," + y + "," + z + ")";
+    }
+  </script>
+
+</head>
+
+<body>
+  <h1>Click button to get random color</h1>
+  <BR />
+  <INPUT type="button" value="Change color" onclick="color()">
+
+</body>
+
+</html>

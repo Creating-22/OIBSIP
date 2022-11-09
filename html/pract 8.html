@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<h2>Date methods</h2>
+<script>
+    var d = new Date();
+d.getTime();
+document.writeln(d);document.writeln("<br>");
+d = new Date();
+var a=d.getFullYear();
+document.writeln(a);document.writeln("<br>");
+d = new Date();
+a=d.getMonth();
+document.writeln(a);document.writeln("<br>");
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let month = months[d.getMonth()];
+document.writeln(month);
+d = new Date();
+a=d.getHours();
+document.writeln(a);document.writeln("<br>");
+d = new Date();
+a=d.getMinutes();
+document.writeln(a);document.writeln("<br>");
+d = new Date();
+a=d.getDay();
+document.writeln(a);document.writeln("<br>");
+d = new Date();
+let day = days[d.getDay()];
+document.writeln(day);document.writeln("<br>");
+d.setFullYear(2020);
+document.writeln(d);document.writeln("<br>");</script>
+</html>
