@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      *{
+    margin: 0px;
+    padding: 0px;
+    
+    box-sizing: border-box;
+}
+body{
+    background-color: #00132E;
+    color: #fff;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+.navlink ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 14px;
+    position: relative;
+}
+.navlink ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+.navlink ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.navlink ul li a:hover::after{
+ width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+.navbar-brand{
+  padding-left: 30px;
+}
+.container1{
+  margin-top: 5px;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: row;
+}
+.col1{
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 370px;
+  vertical-align: center;
+}
+.d1{
+  font-size:40px ;
+}
+.btn1{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 15px;
+}
+.btn1:hover{
+  background-color: rgb(122, 234, 154);
+}
+.btn2{
+  background-color: #f4f7f4; /* Green */
+  border: none;
+  color: rgb(12, 11, 11);
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 15px;
+}
+.btn2:hover{
+  background-color: rgb(100, 97, 97);
+}
+.img{
+  border-radius: 50%;
+}
+.container2{
+  margin-top: 20px;
+  padding-top: 30px;
+  margin-left: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.dis{
+  font-size: 50px;
+}
+.row1{
+  margin-top: 30px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.lead{
+  color: #fff;
+}
+.col{
+  margin-left: 30px;
+  margin-right: 40px;
+}
+.container3{
+  display: flex;
+  flex-direction: rows;
+  text-align: center;
+}
+.container4{
+
+  text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <!----------navbar--------------------------------------------------------------->
+   
+    <nav >
+        
+            <h1 class="navbar-brand"  >Priyal Agrahari</h1>
+                
+            <div class="navlink">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Experience</a></li>
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+    </nav>
+    <!----------main----------------------------------------------------------------->
+    <div class="  container1 ">
+        <div class="col1 ">
+            <h1 class="d1" style="color:white ;">I'm Priyal</h1>
+            <p class="lead">Web Developer</p>
+            <buttton class="btn1 ">Dowmload resume</buttton>
+        <buttton class="btn2">learn more</buttton></div>
+        <div class="col2 ">
+            <img class="img" src="mypic.jpeg" width="300px" alt="man" height="300px">
+        </div>
+    </div>
+    <!----------about-----------------------------------------------------------------> 
+    <div class="container2">
+        <p class="dis">Welcome to my portfolio page.I am 3rd Year Engineering student in Information Technology .I am tech enthusiast and proficient developer.Hope you find my profile interesting. </p>
+        <div class="row1">
+            <div class="col">
+                <img src="C:\Users\Priyal Agrahari\Pictures\github.png" alt="image" width="50px" height="50px">
+                <a href="https://github.com/Creating-22" class="lead">Github</a>
+            </div>
+            <div class="col">
+                <img src="C:\Users\Priyal Agrahari\Pictures\insta.png" alt="image" width="50px" height="50px">
+                
+                <a href="https://www.instagram.com/agrahari_priyal/?next=%2F" class="lead ">Instagram</a></p>
+            </div>
+            <div class="col">
+                <img src="C:\Users\Priyal Agrahari\Pictures\gmail.jpeg" alt="image"width="50px" height="50px">
+               
+                <a href="priyalagrahari22@gmail.com" class="lead ">Email</a>
+            </div>
+            <div class="col">
+                <img src="C:\Users\Priyal Agrahari\Pictures\linked.png" alt="image" width="50px" height="50px">
+                
+                <a href="www.linkedin.com/in/priyal-agrahari-397821202" class="lead">Linkedin</a>
+            </div>
+            
+        </div>
+        
+    </div>
+    <!----------what i do----------------------------------------------------------------->
+    <div class="container4 ">
+        <h1 class="display-3 ">What I Do</h1>
+        <div class="container3  ">
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('webd.jpg');  background-repeat: no-repeat;
+            
+            background-size: cover;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Web Development</h3>
+                
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('app.png'); background-repeat: no-repeat;
+            
+            background-size: cover;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Application Development</h3>
+                
+              </div>
+            </div>
+          </div>
+    
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('blockchain.png'); background-repeat: no-repeat;
+            
+            background-size: cover;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Blockchain</h3>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-----------skills----------------------------------------------------------------->
+  <div class="container text-center ">
+    <h1 class="display-3 text-white">
+      Skills
+    </h1>
+    <div class="row bg-dark text-light">
+      <div class="col">
+        <h1 class="display-4">50%</h1>
+        <p class="lead text-success">Javascript</p>
+      </div>
+      <div class="col">
+        <h1 class="display-4">80%</h1>
+        <p class="lead text-success">HTML</p>
+      </div>
+      <div class="col">
+        <h1 class="display-4">60%</h1>
+        <p class="lead text-success">CSS</p>
+      </div>
+      <div class="col">
+        <h1 class="display-4">50%</h1>
+        <p class="lead text-success">Bootstrap</p>
+      </div>
+    </div>
+  </div>
+       <!----------footer----------------------------------------------------------------->
+<div class="container text-center  text-light"><form class="row g-3">
+  <h1 class="display-3 bg-dark text-light" >Get in touch</h1>
+  <div class="col-12">
+    <label for="inputAddress2" class="form-label">Name</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Your name">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+  </div>
+  <div class="col-md-6">
+    <label for="inputPassword4" class="form-label">Phone Number</label>
+    <input type="text" class="form-control" id="inputPassword4" placeholder="Phone number">
+  </div>
+  <div class="col-12">
+    <label for="inputAddress" class="form-label">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  
+  
+  <div class="col-md-4">
+    <label for="inputState" class="form-label">State</label>
+    <select id="inputState" class="form-select">
+      <option selected>Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputZip" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="inputZip">
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-success">Submit</button>
+  </div>
+</form>
+
+
+</div>
+    </div>
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Thank You....</span>
+  </div>
+</footer>
+
+</html>
