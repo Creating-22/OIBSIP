@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="gold" />
+    
+    <title>Temperature Cnvrtr</title>
+    <!-- linking the external styling sheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+   <div id="content-container">
+    
+      <h1 id="cont-hdg">Temperature Converter</h1> 
+   <!--  making container -->
+   
+      <div id="calc-container">
+
+        <div class="content-divi">
+          <div class="div-head">From</div>
+          <div class="inputs-container">
+           
+            <input
+              type="number" class="input-field inputs"  name="input"   id="input" placeholder="0.0" required/>
+          
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="from">
+                <option value="Celcius" selected>Celcius</option>
+                <option value="Farenheit">Farenheit</option>
+                <option value="Farenheit">Kelvin</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      
+        <div class="content-divi">
+          <div class="div-head">To</div>
+          <div class="inputs-container">
+            
+            <input
+              type="text"  class="input-field input"  name="result" id="result" placeholder="0.0"  disabled
+            />
+           
+            <div class="dropdown-container">
+              <select class="dropdown inputs" id="to">
+                <!-- dropdown menu list -->
+                <option value="Farenheit">Farenheit</option>
+                <option value="Celcius">Celcius</option>
+                <option value="Farenheit">Kelvin</option>
+            
+              </select>
+            </div>
+          </div>
+        </div>
+       <!-- asking user to convert temperature -->
+    <button id="convert-btn" class="inputs" onclick="converter()">
+      
+          Convert
+        </button>
+       
+      </div>
+   
+    </div>
+   
+    <!-- for calculation adding js file -->
+    <script src="./script.js"></script>
+  </body>
+</html>
